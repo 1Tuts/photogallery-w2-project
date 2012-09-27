@@ -17,10 +17,6 @@ nav.menu a{
 	height: 110px;
 }
 
-section.main{
-	border : 2px dotted red;
-}
-
 menu {
 	width: 800px;
 	margin: 0 auto;
@@ -85,5 +81,15 @@ div.floral1 {
 	position: fixed;
 	bottom: 0;
 	left: -60px;
+	z-index: 1001;
+}
+
+div.floral2 {
+	background: url('images/floral2.png') no-repeat;
+	width: 150px;
+	height: 280px;
+	position: fixed;
+	top: 0;
+	right:-40px;
 	z-index: 1001;
 }
