@@ -1,5 +1,5 @@
 body {
-	background: url('background.jpeg') repeat fixed center center;
+	background: url('images/background.jpeg') repeat fixed center center;
 }
 
 
@@ -12,7 +12,7 @@ nav.menu a{
 }
 
 .icon {
-	background: url('icon.png') fixed;
+	background: url('images/icon.png') fixed;
 	width : 90px;
 	height: 110px;
 }
@@ -26,7 +26,7 @@ menu {
 	margin: 0 auto;
 }
 footer {
-	background: url('menu_bot_bg.png') repeat-x 0 bottom;
+	background: url('images/menu_bot_bg.png') repeat-x 0 bottom;
 	position: absolute;
 	left: 0;
 	bottom: 0;
@@ -40,7 +40,7 @@ section.slideshow {
 	height: 550px;
 }
 div.photo {
-	background: url('mask2.png') no-repeat;
+	background: url('images/mask2.png') no-repeat;
 	width: 805px;
 	height: 488px;
 	z-index: 100;
@@ -79,7 +79,7 @@ section.slideshow > ul li:hover {
 }
 
 div.floral1 {
-	background: url('floral1.png') no-repeat;
+	background: url('images/floral1.png') no-repeat;
 	width: 200px;
 	height: 300px;
 	position: fixed;
