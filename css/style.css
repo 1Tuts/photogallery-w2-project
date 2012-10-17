@@ -297,14 +297,14 @@ div.Lside nav.main li:hover > menu {
 div.img-container {
 	overflow: hidden;
 	position: relative;
-	min-height: 1000px;
+	min-height: 3000px;
 }
 section.element {
 	position: relative;
 	float: left;
 	width: 246px;
 	overflow: hidden;
-	margin: 10px 33px 0px 0px;
+	margin: 0 33px 0px 0px;
 	-webkit-transition: all 600ms;
 
 }
@@ -329,7 +329,6 @@ section.img-holder {
 	left: 0px;
 	top: 0px;
 	width: 240px; 
-	height: 180px;
 }
 section.img-holder div.img-overlay {
 	position: absolute;
