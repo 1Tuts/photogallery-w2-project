@@ -102,11 +102,11 @@
 }
 
 .lb-prev:hover {
-  background: url('images/lightbox/prev.png') left 48% no-repeat;
+  background: url('../images/lightbox/prev.png') left 48% no-repeat;
 }
 
 .lb-next:hover {
-  background: url('images/lightbox/next.png') right 48% no-repeat;
+  background: url('../images/lightbox/next.png') right 48% no-repeat;
 }
 
 .lb-dataContainer {
