@@ -33,33 +33,6 @@ div.holder {
 	overflow: hidden;
 }
 
-div.logo{
-	background-image:url('logo-under.png');
-	background-size:100% 100%;
-	background-position:center top;
-	background-repeat:no-repeat;
-	width: 210px;
-	height: 94px;
-	overflow:hidden;
-	position: fixed;
-	right: 3%;
-	bottom: 60px;
-	opacity: 0.85;
-	-webkit-transition: opacity 500ms;
-	-moz-transition: opacity 500ms;
-	-o-transition: opacity 500ms;
-	-ms-transition: opacity 500ms;
-	transition: opacity 500ms;
-}
-
-div.logo:hover{
-	-webkit-transition: opacity 250ms;
-	-moz-transition: opacity 250ms;
-	-o-transition: opacity 250ms;
-	-ms-transition: opacity 250ms;
-	transition: opacity 250ms;
-	opacity:0.98;
-}
 
 h1.indent{
 	text-indent:50000px;
@@ -96,7 +69,6 @@ div.bg-top {
 	background: url('../images/top_bg.png') repeat-x 0 0;
 	position: relative;
 	z-index: 120;
-
 }
 
 div.bg {
@@ -125,11 +97,12 @@ footer {
 	background-repeat :repeat-x;
 }
 
-footer h1 {
-	padding: 20px 20px 10px;
-	color: #DAD5CD;
-	letter-spacing: 3px;
-	font-size: 27px;
+footer p {
+	float: left;
+	color: #6E6E6E;
+	letter-spacing: 2px;
+	padding: 18px 0 15px 18px;
+	font-size: 10px;
 	font-family: Georgia,"Times New Roman",Times,serif;
 }
 
@@ -174,19 +147,48 @@ div.footer div.bottom-cont a.go_up:hover {
 	text-decoration: none;
 	background-position: 0 -40px;
 }
+/*menu*/
 
 div.Lside {
-	display: block;
 	float: left;
 	width: 246px;
-	color: #E9E9E9;
-	text-shadow: 1px 1px 0 black;
 	padding-bottom: 20px;
 	position: relative;
 	z-index: 100;
 	margin: 0 35px 0 6px;
+	-webkit-transition: all 1s;
+
 }
 
+div.Lside nav.main div.logo{
+	background-image:url('../images/logo.png');
+	background-size:100% 100%;
+	background-position:center top;
+	background-repeat:no-repeat;
+	width: 175px;
+	height: 125px;
+	overflow:hidden;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	top: 15px;
+	opacity: 0.8;
+	-webkit-transition: opacity 500ms;
+	-moz-transition: opacity 500ms;
+	-o-transition: opacity 500ms;
+	-ms-transition: opacity 500ms;
+	transition: opacity 500ms;
+}
+
+div.Lside nav.main div.logo:hover{
+	-webkit-transition: opacity 250ms;
+	-moz-transition: opacity 250ms;
+	-o-transition: opacity 250ms;
+	-ms-transition: opacity 250ms;
+	transition: opacity 250ms;
+	cursor: pointer;
+	opacity:0.98;
+}
 
 div.Lside div.top {
 	background: url('../images/aside_wedget_t.png') no-repeat 0 0;
@@ -204,63 +206,24 @@ div.Lside div.botomn {
 
 div.Lside nav.main {
 	width : 206px;
-	height : 450px;
 	position: relative;
 	background : url('../images/aside_wedget.png');
-	padding-top: 50px;
 	padding: 1px 20px 10px 22px;
 	text-shadow: black 1px 1px 0;
 }
 
-div.Lside nav.main .btnup ,
-div.Lside nav.main .btndown {
-	position :absolute;
-	bottom : 10px;
-	left: 100px;
-	width : 48px;
-	height : 48px;
-	cursor: pointer;
-	background: url('../images/open.png');
+div.Lside nav.main > menu {
+	margin: 50px 0 20px;
 }
 
-.open div.Lside nav.main .btndown {
-	display: none;
-}
-
-.close div.Lside nav.main .btndown {
-	background : url('../images/open.png');
-	-webkit-transform: rotate(180deg);
-	-webkit-transition: all 1s;
-}
-
-.close div.Lside nav.main .btnup {
-	display: none;
-}
-
-.open div.Lside nav.main {
-	top:10px;
-}
-
-.close div.Lside nav.main {
-	top : -325px;
-}
-
-
-div.Lside nav.main menu li {
+div.Lside nav.main > menu > li {
 	position: relative;
 	background: url('../images/mm_spread.png') no-repeat center bottom;
 	line-height: 30px;
 	text-align: center;
 }
 
-div.Lside nav.main > menu {
-	margin-top: 80px;
-	width: 184px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-div.Lside nav.main menu a {
+div.Lside nav.main > menu li a {
 	display: block;
 	font-size : 15px;
 	line-height: 20px;
@@ -271,18 +234,67 @@ div.Lside nav.main menu a {
 	font-family: Arial, Helvetica, sans-serif;	
 }
 
-div.Lside nav.main menu li > menu {
+div.Lside nav.main > menu > li > a:hover {
+	background: url('../images/nav_h.png') repeat-y 0 0;
+}
+
+div.Lside nav.main li div {
+	position: absolute;
 	display: none;
-	-webkit-transition: all 1s ease-in-out;
+	opacity: 1;
+	left: 180px;
+	top: -17px;
+	left: 122px;
+	width: 194px;
+	z-index: 1002;
+	-webkit-transition: all 600ms;
 }
 
-div.Lside nav.main menu li li {
-	min-width: 140px;
-}
-
-div.Lside nav.main li:hover > menu {
+div.Lside nav.main li:hover div {
 	display: block;
-	-webkit-transition: all 1s ease-in-out;
+	left:190px;
+	-webkit-transition: all 600ms;
+}
+
+div.Lside nav.main  menu li div menu {
+	background: url('../images/ddmenu_bg.png') no-repeat 0 9px;
+	padding: 26px 0 10px 0;
+	z-index: 1003;
+}
+
+nav.main li div li {
+	background: url('../images/ddmenu_s.png') no-repeat center 4px;
+	margin: 0 0 0 10px;
+	padding: 0;
+	text-align: left;
+	position: relative;
+}
+
+nav.main li div > li:first-child {
+	margin: 0 0 0 10px;
+	padding: 0;
+	text-align: left;
+	position: relative;
+}
+
+div.Lside nav.main menu menu a {
+	font-family: 'Lucida Sans Unicode', 'Lucida Grande', Arial, san-serif;
+	display: block;
+	padding: 9px 0 1px 21px;
+	margin: 0 22px 0 20px;
+	font-size: 12px;
+	text-transform: none;
+	background: url('../images/ddmenu_arr.png') no-repeat -25px 13px;
+}
+
+div.Lside nav.main menu menu a:hover {
+	color: #F5F2EB;
+	text-decoration: underline;
+	background-position: 4px -14px;
+}
+
+div.Lside nav.main menu li menu li {
+	min-width: 140px;
 }
 
 /* CSS of Photos */
@@ -364,4 +376,54 @@ span.zoom-gal:hover {
 
 section.img-holder a img {
 	position: absolute;
+}
+
+/*article*/
+
+div.content div.article  {
+	float:left;
+}
+
+div.content div.article div.article-t {
+	height: 35px;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	width: 686px;
+	background-image: url('../images/article_t_p.png');
+	position: relative;
+	z-index: 20;
+}
+
+div.content div.article div.article-b {
+	width: 686px;
+	height: 52px;
+	background: url('../images/article_b_p.png') no-repeat 0 0;
+}
+
+div.content div.article div.main {
+	width: 640px;
+	background-position: 0 0;
+	background-repeat: repeat-y;
+	background-image: url('../images/article_bg_p.png');
+	position: relative;
+	color: #6F6F6F;
+	padding: 8px 22px 5px 23px;
+	min-height: 50px;
+	text-shadow: none;
+	overflow: hidden;
+}
+
+div.content div.article div.main h1 {
+	font-family:"Lucida Sans Typewriter";
+	font-size:40px;
+	color: #2E2E2E;
+	margin-bottom: 10px;
+}
+
+div.content div.article div.main p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:12px;
+	line-height: 170%;
+	color: #6E6E6E;
+	margin: 5px 0 0;
 }
