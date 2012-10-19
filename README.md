@@ -16,7 +16,7 @@ personal website for Majid Khakpour photographer of "SharAra Newspaper"
 * [Ali Mihandoost](http://github.com/alimd) Teacher / Technical Manager
 * [Mehran Modaresi](https://github.com/modaresi) Project Manager / Graphic Designer / Developer
 * [Samane Khaleghzade](https://github.com/khaleghzade71) Data Gather/ Developer
-* [Maede Kafiyan Safari](https://github.com/barunak) Designer / Developer
+* [Laya Ahmadi](https://github.com/barunak) Designer / Developer
 
 ### Our Desire Design Is :
 http://sl.dream-theme.com/wp/
