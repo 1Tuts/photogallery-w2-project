@@ -2,14 +2,6 @@
 -------------------------------------------------- */
 body.sub {
 	background: url('../images/21-noise-black.png');
-	/* background: url('../images/01-small-lines-for-black.png'); */
-}
-
-body, html {
-	/*overflow: hidden !important;
-	min-width: 100% !important;
-	height: 100% !important;
-	position: relative;*/
 }
 
 header {
@@ -76,7 +68,8 @@ footer {
 	background-repeat :repeat-x;
 }
 
-footer p {
+footer p ,
+div.footer p {
 	float   :left;
 	color   :#6E6E6E;
 	padding :18px 0 15px 18px;
@@ -111,13 +104,15 @@ div.footer div.bottom-cont a.go_up {
 	display : block;
 	float   : left;
 	height  : 38px;
-	margin  : 0px 20px 0 0;
+	margin  : 0px 20px 0 20px;
 	padding : 0 0 0px 31px;
 	color 	: white;
+	line-height: 40px;
 	text-align  : center;
 	text-shadow : -1px -1px 0 black;
-	font-size   : 13px;
+	font-size   : 14px;
 	background  : url('../images/go_up.png') no-repeat 0 0px;
+	text-decoration: none;
 }
 
 div.footer div.bottom-cont a.go_up:hover {
@@ -263,18 +258,24 @@ div.Lside nav.main menu menu a:hover {
 div.Lside nav.main menu li menu li {
 	min-width: 140px;
 }
+div.Lside nav.main	div.article {
+	padding: 5px 0 0 20px;
+}
 
+div.Lside h3 {
+	color: #E6E6E6;
+}
+div.Lside p.contact {
+	font-family: "SF Collegiate Solid";
+	font-size: 15px;
+	line-height: 25px;
+	color: #E6E6E6;
+	padding: 15px 0 0px 10px;
+	text-align: left;
+}
 /* CSS of Photos */
 
 div.holder {
-	min-height:1000px;
-}
-
-.span a {
-	display: block;
-	border: 8px solid #FAFAFA;
-	border-bottom-width: 30px;
-	border-radius: 2px;
 }
 
 div.img-container {
